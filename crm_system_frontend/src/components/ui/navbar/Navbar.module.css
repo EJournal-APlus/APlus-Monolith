@@ -1,0 +1,24 @@
+.ulnavbar{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.navbarlink{
+    text-decoration: none;
+}
+
+.linavbar{
+    padding: 7px 9px;
+    border-radius: 100%;
+}
+
+
+.linavbar:hover{
+    background: #363636;
+}
