@@ -801,6 +801,21 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "CRM_SYSTEM.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MySql.Data": "8.2.0",
+          "MySql.EntityFrameworkCore": "7.0.10",
+          "MySqlConnector": "2.3.3"
+        },
+        "compile": {
+          "bin/placeholder/CRM_SYSTEM.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CRM_SYSTEM.DAL.dll": {}
+        }
       }
     }
   },
@@ -2436,10 +2451,16 @@
         "zstdsharp.port.0.7.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "CRM_SYSTEM.DAL/1.0.0": {
+      "type": "project",
+      "path": "../CRM_SYSTEM.DAL/CRM_SYSTEM.DAL.csproj",
+      "msbuildProject": "../CRM_SYSTEM.DAL/CRM_SYSTEM.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CRM_SYSTEM.DAL >= 1.0.0",
       "MySql.Data >= 8.2.0",
       "MySql.EntityFrameworkCore >= 7.0.10",
       "MySqlConnector >= 2.3.3"
@@ -2477,7 +2498,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\crm_system\\crm_system_backend\\CRM_SYSTEM.DAL\\CRM_SYSTEM.DAL.csproj": {
+              "projectPath": "D:\\crm_system\\crm_system_backend\\CRM_SYSTEM.DAL\\CRM_SYSTEM.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

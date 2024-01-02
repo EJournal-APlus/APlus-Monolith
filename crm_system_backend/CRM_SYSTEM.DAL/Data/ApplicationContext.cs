@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CRM_SYSTEM.DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,9 @@ namespace CRM_SYSTEM.DAL.Data
 {
     public class ApplicationContext : DbContext
     {
+        public DbSet<User> Users => Set<User>();
+        public DbSet<Role> Roles => Set<Role>();
+        public DbSet<Status> UserStatus => Set<Status>();
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
             

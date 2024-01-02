@@ -52,22 +52,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.10, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.3, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -124,7 +108,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\crm_system\\crm_system_backend\\CRM_SYSTEM.DAL\\CRM_SYSTEM.DAL.csproj": {
+                "projectPath": "D:\\crm_system\\crm_system_backend\\CRM_SYSTEM.DAL\\CRM_SYSTEM.DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -10,7 +10,6 @@ D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Google.Protobuf
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\K4os.Compression.LZ4.dll
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\K4os.Hash.xxHash.dll
-D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll

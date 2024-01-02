@@ -10,10 +10,6 @@
         "dependencies": {
           "CRM_SYSTEM.BLL": "1.0.0",
           "CRM_SYSTEM.DAL": "1.0.0",
-          "Microsoft.AspNetCore.OpenApi": "8.0.0",
-          "MySql.Data": "8.2.0",
-          "MySql.EntityFrameworkCore": "7.0.10",
-          "MySqlConnector": "2.3.3",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -62,17 +58,6 @@
           "lib/net6.0/K4os.Hash.xxHash.dll": {
             "assemblyVersion": "1.0.8.0",
             "fileVersion": "1.0.8.0"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.OpenApi/8.0.0": {
-        "dependencies": {
-          "Microsoft.OpenApi": "1.4.3"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53112"
           }
         }
       },
@@ -156,11 +141,11 @@
       "Microsoft.Extensions.Primitives/7.0.0": {},
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.OpenApi/1.4.3": {
+      "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "1.4.3.0",
-            "fileVersion": "1.4.3.0"
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
           }
         }
       },
@@ -267,7 +252,7 @@
       },
       "Swashbuckle.AspNetCore.Swagger/6.4.0": {
         "dependencies": {
-          "Microsoft.OpenApi": "1.4.3"
+          "Microsoft.OpenApi": "1.2.3"
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
@@ -464,6 +449,7 @@
       },
       "CRM_SYSTEM.BLL/1.0.0": {
         "dependencies": {
+          "CRM_SYSTEM.DAL": "1.0.0",
           "MySql.Data": "8.2.0",
           "MySql.EntityFrameworkCore": "7.0.10",
           "MySqlConnector": "2.3.3"
@@ -524,13 +510,6 @@
       "sha512": "sha512-Wp2F7BamQ2Q/7Hk834nV9vRQapgcr8kgv9Jvfm8J3D0IhDqZMMl+a2yxUq5ltJitvXvQfB8W6K4F4fCbw/P6YQ==",
       "path": "k4os.hash.xxhash/1.0.8",
       "hashPath": "k4os.hash.xxhash.1.0.8.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.OpenApi/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-T4mwMvPSOYAp+KeQ4xO8H2rxpiOMJ9W/7yBBkUTMp96AHtGlPN4s7hbax2tM61LxTY775JKL4fiv5grn41EHXw==",
-      "path": "microsoft.aspnetcore.openapi/8.0.0",
-      "hashPath": "microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/7.0.10": {
       "type": "package",
@@ -644,12 +623,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.OpenApi/1.4.3": {
+    "Microsoft.OpenApi/1.2.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rURwggB+QZYcSVbDr7HSdhw/FELvMlriW10OeOzjPT7pstefMo7IThhtNtDudxbXhW+lj0NfX72Ka5EDsG8x6w==",
-      "path": "microsoft.openapi/1.4.3",
-      "hashPath": "microsoft.openapi.1.4.3.nupkg.sha512"
+      "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "path": "microsoft.openapi/1.2.3",
+      "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/4.7.0": {
       "type": "package",
