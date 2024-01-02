@@ -6,5 +6,7 @@ namespace CRM_SYSTEM.BLL.Interfaces
     {
         public Task<List<User>> GetAllUserAsync();
         public Task<User> GetUserByName(string value);
+        public Task<User> CreateUser(User user);
+        public int GetUserCount();
     }
 }

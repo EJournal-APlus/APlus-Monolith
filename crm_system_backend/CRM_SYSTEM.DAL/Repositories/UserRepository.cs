@@ -17,6 +17,33 @@ namespace CRM_SYSTEM.DAL.Repositories
         {
             _context = context;
         }
+
+        public async Task<User> CreateUser(User user)
+        {
+            var hasUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
+            if (hasUser == null)
+            {
+                var userModel = new User()
+                {
+                    Name = user.Name,
+                    Lastname = user.Lastname,
+                    Surname = user.Surname,
+                    Email = user.Email,
+                    MobilePhone = user.MobilePhone,
+                    Password = user.Password,
+                    RoleId = 1,
+                    StatusId = 1,
+                };
+                _context.Users.Add(userModel);
+                await _context.SaveChangesAsync();
+                return userModel;
+            }
+            else
+            {
+                throw new ArgumentException("Пользователь существует");
+            }
+        }
+
         public async Task<List<User>> GetAllUserAsync()
         {
             return await _context.Users.ToListAsync();
@@ -29,6 +56,16 @@ namespace CRM_SYSTEM.DAL.Repositories
                 Convert.ToString(u.Id) == value);
             if (hasUser != null) return hasUser;
             else throw new ArgumentException("Пользователь не найден");
+        }
+
+        public int GetUserCount()
+        {
+            int count = 0;
+            foreach (var item in _context.Users)
+            {
+                count++;
+            }
+            return count;
         }
     }
 }

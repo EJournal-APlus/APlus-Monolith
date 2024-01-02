@@ -12,6 +12,11 @@ namespace CRM_SYSTEM.BLL.Services
             _userRepository = userRepository;
         }
 
+        public Task<User> CreateUser(User user)
+        {
+            return _userRepository.CreateUser(user);
+        }
+
         public Task<List<User>> GetAllUserAsync()
         {
             return _userRepository.GetAllUserAsync();
@@ -20,6 +25,11 @@ namespace CRM_SYSTEM.BLL.Services
         public Task<User> GetUserByName(string value)
         {
             return _userRepository.GetUserByName(value);
+        }
+
+        public int GetUserCount()
+        {
+            return (_userRepository.GetUserCount());
         }
     }
 }
