@@ -25,7 +25,8 @@ namespace CRM_SYSTEM.DAL.Repositories
         public async Task<User> GetUserByName(string value)
         {
             var hasUser = await _context.Users.FirstOrDefaultAsync(u => u.Name == value ||
-                u.Lastname == value || u.Surname == value);
+                u.Lastname == value || u.Surname == value ||
+                Convert.ToString(u.Id) == value);
             if (hasUser != null) return hasUser;
             else throw new ArgumentException("Пользователь не найден");
         }

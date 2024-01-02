@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRM_SYSTEM.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34e1144950db487c0f401623325ee673a8895080")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRM_SYSTEM.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRM_SYSTEM.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
