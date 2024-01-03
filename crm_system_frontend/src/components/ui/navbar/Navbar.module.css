@@ -6,11 +6,16 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
 }
 
 .navbarlink{
     text-decoration: none;
+}
+
+.navbaravatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 .linavbar{

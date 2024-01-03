@@ -1,4 +1,5 @@
 ﻿using CRM_SYSTEM.DAL.Data;
+using CRM_SYSTEM.DAL.Helpers;
 using CRM_SYSTEM.DAL.Interfaces;
 using CRM_SYSTEM.DAL.Models;
 using Microsoft.EntityFrameworkCore;
@@ -30,7 +31,7 @@ namespace CRM_SYSTEM.DAL.Repositories
                     Surname = user.Surname,
                     Email = user.Email,
                     MobilePhone = user.MobilePhone,
-                    Password = user.Password,
+                    Password = HashPasswordHelper.HashPassword(user.Password),
                     RoleId = 1,
                     StatusId = 1,
                 };

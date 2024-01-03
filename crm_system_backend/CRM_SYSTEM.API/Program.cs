@@ -1,6 +1,7 @@
 using CRM_SYSTEM.BLL.Interfaces;
 using CRM_SYSTEM.BLL.Services;
 using CRM_SYSTEM.DAL.Data;
+using CRM_SYSTEM.DAL.Helpers;
 using CRM_SYSTEM.DAL.Interfaces;
 using CRM_SYSTEM.DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -15,20 +16,22 @@ string? connectionString = builder.Configuration.GetConnectionString("DefaultCon
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseMySQL(connectionString!));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ValidateHelper>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddCors(options =>
+/*builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:5173/",
-                                              "http://localhost:5173/addcard").AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
-                      });
-});
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173/",
+                "http://localhost:5173/getall")
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
+});*/
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -39,7 +42,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 app.UseAuthorization();
 
 app.MapControllers();

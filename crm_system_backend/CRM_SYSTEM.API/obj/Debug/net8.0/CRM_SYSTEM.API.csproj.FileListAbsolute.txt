@@ -63,3 +63,11 @@ D:\crm_system\crm_system_backend\CRM_SYSTEM.API\obj\Debug\net8.0\refint\CRM_SYST
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\obj\Debug\net8.0\CRM_SYSTEM.API.pdb
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\obj\Debug\net8.0\CRM_SYSTEM.API.genruntimeconfig.cache
 D:\crm_system\crm_system_backend\CRM_SYSTEM.API\obj\Debug\net8.0\ref\CRM_SYSTEM.API.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\crm_system\crm_system_backend\CRM_SYSTEM.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
