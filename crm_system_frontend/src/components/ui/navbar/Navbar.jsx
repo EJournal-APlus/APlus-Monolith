@@ -5,7 +5,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BiSolidExit } from "react-icons/bi";
 import { useEffect, useState } from 'react';
 import { Usersservice } from '../../../services/users.service';
-
+import { useNavigate } from 'react-router-dom';
 
 
 function Navbar(){
@@ -20,6 +20,12 @@ function Navbar(){
         fetchData()
     }, [])
 
+    const logout = () => {
+        const navigate = useNavigate();
+        localStorage.removeItem('token');
+        navigate("/");
+    }
+
     return(
         <div className='navbar'>
             <ul className={styles.ulnavbar}>
@@ -33,7 +39,7 @@ function Navbar(){
                     }}/></a>
                 </li>
                 <li className={styles.linavbar}>
-                    <a className={styles.navbarlink}><FaUser style={{
+                    <a className={styles.navbarlink} href='/users'><FaUser style={{
                         width: '30px',
                         height: '30px'
                     }}/></a>
@@ -46,11 +52,11 @@ function Navbar(){
                     }}/></a>
                 </li>
                 <li className={styles.linavbar}>
-                    <a className={styles.navbarlink} href='/userdetail'><BiSolidExit style={{
+                    <button onClick={logout} className={styles.navbarlink} href='/userdetail'><BiSolidExit style={{
                         marginTop: '2px',
                         width: '30px',
-                        height: '30px'
-                    }}/></a>
+                        height: '30px',
+                    }}/></button>
                 </li>
             </ul>
         </div>

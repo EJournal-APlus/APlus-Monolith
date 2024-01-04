@@ -41,7 +41,8 @@ namespace CRM_SYSTEM.API.Controllers
             return Ok("Регистрация прошла успешно");
         }
 
-        [HttpPost("email")]
+        [HttpPost]
+        [Route("/login")]
         public async Task<IActionResult> UserLogin([FromBody] LoginViewModel model)
         {
             var user = await _validate.ValidateUser(model.Email, model.Password);
@@ -52,6 +53,11 @@ namespace CRM_SYSTEM.API.Controllers
                 return Ok(new { token });
             }
         }
+
+        [HttpGet]
+        [Route("/authuser")]
+        public IActionResult Auth(string token) =>
+            Ok(_userService.AuthUser(token));
 
         [HttpGet]
         [Route("/getavatar")]

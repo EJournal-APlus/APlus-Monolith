@@ -3,11 +3,7 @@ using CRM_SYSTEM.DAL.Helpers;
 using CRM_SYSTEM.DAL.Interfaces;
 using CRM_SYSTEM.DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace CRM_SYSTEM.DAL.Repositories
 {
@@ -17,6 +13,20 @@ namespace CRM_SYSTEM.DAL.Repositories
         public UserRepository(ApplicationContext context)
         {
             _context = context;
+        }
+
+        public string AuthUser(string token)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
+            if (jsonToken != null)
+            {
+                foreach (var claim in jsonToken.Claims)
+                {
+                    return claim.Value;
+                }
+            }
+            return "Не авторизован";
         }
 
         public async Task<User> CreateUser(User user)

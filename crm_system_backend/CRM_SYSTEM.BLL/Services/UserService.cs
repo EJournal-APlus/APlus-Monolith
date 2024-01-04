@@ -12,6 +12,11 @@ namespace CRM_SYSTEM.BLL.Services
             _userRepository = userRepository;
         }
 
+        public string AuthUser(string token)
+        {
+           return _userRepository.AuthUser(token);
+        }
+
         public Task<User> CreateUser(User user)
         {
             return _userRepository.CreateUser(user);
