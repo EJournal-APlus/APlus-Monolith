@@ -1,4 +1,5 @@
 ﻿using CRM_SYSTEM.DAL.Models;
+using CRM_SYSTEM.DAL.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,10 @@ namespace CRM_SYSTEM.DAL.Interfaces
         public Task<List<User>> GetAllUserAsync();
         public Task<User> GetUserByName(string value);
         public Task<User> CreateUser(User user);
+        public Task<User> UploadAvatar(AvatarViewModel avatarViewModel);
         public string AuthUser(string token);
         public int GetUserCount();
+        public Task<User> GetUserInfo(string username);
+        public Task<string> GetUserAvatar(string username);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CRM_SYSTEM.BLL.Interfaces;
 using CRM_SYSTEM.DAL.Interfaces;
 using CRM_SYSTEM.DAL.Models;
+using CRM_SYSTEM.DAL.ViewModels;
 
 namespace CRM_SYSTEM.BLL.Services
 {
@@ -27,6 +28,11 @@ namespace CRM_SYSTEM.BLL.Services
             return _userRepository.GetAllUserAsync();
         }
 
+        public Task<string> GetUserAvatar(string username)
+        {
+            return _userRepository.GetUserAvatar(username);
+        }
+
         public Task<User> GetUserByName(string value)
         {
             return _userRepository.GetUserByName(value);
@@ -35,6 +41,16 @@ namespace CRM_SYSTEM.BLL.Services
         public int GetUserCount()
         {
             return (_userRepository.GetUserCount());
+        }
+
+        public Task<User> GetUserInfo(string username)
+        {
+            return _userRepository.GetUserInfo(username);
+        }
+
+        public Task<User> UploadAvatar(AvatarViewModel avatarViewModel)
+        {
+            return _userRepository.UploadAvatar(avatarViewModel);
         }
     }
 }

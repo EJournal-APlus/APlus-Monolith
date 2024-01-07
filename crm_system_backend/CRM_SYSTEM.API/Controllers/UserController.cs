@@ -3,6 +3,7 @@ using CRM_SYSTEM.DAL.Data;
 using CRM_SYSTEM.DAL.Helpers;
 using CRM_SYSTEM.DAL.Models;
 using CRM_SYSTEM.DAL.ViewModel;
+using CRM_SYSTEM.DAL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRM_SYSTEM.API.Controllers
@@ -61,11 +62,42 @@ namespace CRM_SYSTEM.API.Controllers
 
         [HttpGet]
         [Route("/getavatar")]
-        public IActionResult GetImage(string email)
+        public async Task<IActionResult> GetAvatar(string username)
         {
-            var imagePath = $@"D:\crm_system\crm_system_backend\CRM_SYSTEM.DAL\Images\UserAvatar\{email}.jpg";
-            var imageBytes = System.IO.File.ReadAllBytes(imagePath);
-            return File(imageBytes, "image/jpeg");
+            return Ok(await _userService.GetUserAvatar(username));
+        }
+
+        [HttpPut]
+        [Route("/uploadavatar")] 
+        public async Task<IActionResult> UploadAvatar(AvatarViewModel avatarViewModel)
+        {
+            return Ok(await _userService.UploadAvatar(avatarViewModel));
+        }
+
+        [HttpGet]
+        [Route("/getinfo")]
+        public async Task<IActionResult> GetInfo(string username)
+        {
+            return Ok(await _userService.GetUserInfo(username));
+        }
+
+        [HttpPost("upload")]
+        public ActionResult UploadImage()
+        {
+            try
+            {
+                var file = Request.Form.Files[0];
+                var username = Request.Form["username"].ToString();
+                var uniqueFileName = Guid.NewGuid().ToString() + $"{username}" + file.FileName;
+                var filePath = Path.Combine("UserAvatar", uniqueFileName);
+                using var fileStream = new FileStream(filePath, FileMode.Create);
+                file.CopyTo(fileStream);
+                return Ok(new { imageUrl = filePath });
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Error: " + ex.Message);
+            }
         }
     }
 }

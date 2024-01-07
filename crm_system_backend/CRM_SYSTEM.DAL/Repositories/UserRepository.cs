@@ -2,6 +2,7 @@
 using CRM_SYSTEM.DAL.Helpers;
 using CRM_SYSTEM.DAL.Interfaces;
 using CRM_SYSTEM.DAL.Models;
+using CRM_SYSTEM.DAL.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -60,6 +61,13 @@ namespace CRM_SYSTEM.DAL.Repositories
             return await _context.Users.ToListAsync();
         }
 
+        public async Task<string> GetUserAvatar(string username)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == username);
+            if (user != null) return $"{user.Avatar64}";
+            else throw new ArgumentException("Пользователь не найден");
+        }
+
         public async Task<User> GetUserByName(string value)
         {
             var hasUser = await _context.Users.FirstOrDefaultAsync(u => u.Name == value ||
@@ -77,6 +85,25 @@ namespace CRM_SYSTEM.DAL.Repositories
                 count++;
             }
             return count;
+        }
+
+        public async Task<User> GetUserInfo(string username)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == username);
+            if (user != null) return user;
+            else throw new ArgumentException("Пользователь не найден");
+        }
+
+        public async Task<User> UploadAvatar(AvatarViewModel avatarViewModel)
+        {
+            var userAvatar = await _context.Users.FirstOrDefaultAsync(u => u.Email == avatarViewModel.Email);
+            if(userAvatar != null)
+            {
+                userAvatar.Avatar64 = avatarViewModel.Avatar64;
+                await _context.SaveChangesAsync();
+                return userAvatar;
+            }
+            else { throw new ArgumentException("Пользователь не найден"); }
         }
     }
 }
