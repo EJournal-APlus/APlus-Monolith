@@ -62,8 +62,8 @@ function Userprofile(){
               <div style={{display: 'block'}}>
                   <Userinfo/>
                 <div className={styles.form}>
-                    <input type="file" onChange={handleFileChange} /><br />
-                    <button onClick={handleUpload}>Загрузить аватар</button>
+                    <input className={styles.upload} type="file" onChange={handleFileChange} /><br />
+                    <button className={styles.btn} onClick={handleUpload}>Загрузить аватар</button>
                 </div>
               </div>
             </div>

@@ -21,5 +21,10 @@ export const Usersservice = {
             console.error("Failed to fetch avatar:", error);
             return null; 
         }
+    },
+    async getUserInfo(email){
+        const responce = await axios.get(`https://localhost:7269/getinfo?username=${email}`);
+        console.log(responce.data);
+        return responce.data;
     }
 }

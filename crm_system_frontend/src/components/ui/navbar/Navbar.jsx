@@ -5,7 +5,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BiSolidExit } from "react-icons/bi";
 import { useEffect, useState } from 'react';
 import { Usersservice } from '../../../services/users.service';
-
+import { BsPeopleFill } from "react-icons/bs";
 
 function Navbar({avatarName}){
     
@@ -43,7 +43,7 @@ function Navbar({avatarName}){
                     }}/></a>
                 </li>
                 <li className={styles.linavbar}>
-                    <a className={styles.navbarlink} href='/users'><FaUser style={{
+                    <a className={styles.navbarlink} href='/users'><BsPeopleFill style={{
                         width: '30px',
                         height: '30px'
                     }}/></a>
