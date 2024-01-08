@@ -1,0 +1,40 @@
+@import url('../../../assets/styles/global-styles.css');
+.title{
+    font-family: 'Roboto Flex', serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.avatar{
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.infoplace{
+    display: flex;
+    align-items: center;
+}
+
+.nameuser{
+    color: white;
+    font-family: 'Roboto Flex', serif;
+}
+
+.userinfo{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    margin-left: 50px;
+    display: flex;
+}
+
+input[type='file'] {
+    display: none;
+}

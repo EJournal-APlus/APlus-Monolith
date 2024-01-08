@@ -5,6 +5,7 @@ using CRM_SYSTEM.DAL.Models;
 using CRM_SYSTEM.DAL.ViewModel;
 using CRM_SYSTEM.DAL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.WebSockets;
 
 namespace CRM_SYSTEM.API.Controllers
 {
@@ -84,19 +85,30 @@ namespace CRM_SYSTEM.API.Controllers
         [HttpPost("upload")]
         public ActionResult UploadImage()
         {
-            try
+            var file = Request.Form.Files[0];
+            var username = Request.Form["username"].ToString();
+            var uniqueFileName = Guid.NewGuid().ToString() + $"{username}" + file.FileName;
+            var filePath = Path.Combine("UserAvatar", uniqueFileName);
+            using var fileStream = new FileStream(filePath, FileMode.Create);
+            file.CopyTo(fileStream);
+            return Ok(new { imageUrl = filePath });
+        }
+        [HttpGet]
+        [Route("api/getimage")]
+        public IActionResult GetImage(string avatarName)
+        {
+            var directoryPath = @"D:\crm_system\crm_system_backend\CRM_SYSTEM.API\UserAvatar";
+            var files = Directory.GetFiles(directoryPath, $"*{avatarName}*.jpg");
+
+            if (files.Length > 0)
             {
-                var file = Request.Form.Files[0];
-                var username = Request.Form["username"].ToString();
-                var uniqueFileName = Guid.NewGuid().ToString() + $"{username}" + file.FileName;
-                var filePath = Path.Combine("UserAvatar", uniqueFileName);
-                using var fileStream = new FileStream(filePath, FileMode.Create);
-                file.CopyTo(fileStream);
-                return Ok(new { imageUrl = filePath });
+                var imagePath = files[0];
+                var imageBytes = System.IO.File.ReadAllBytes(imagePath);
+                return File(imageBytes, "image/jpeg");
             }
-            catch(Exception ex)
+            else
             {
-                return StatusCode(500, "Error: " + ex.Message);
+                return NotFound();
             }
         }
     }
