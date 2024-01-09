@@ -45,3 +45,21 @@
 .btn:hover{
     background-color: #8e44d9;
 }
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.regbtn{
+    font-size: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: .2s ease;
+}
+
+.regbtn:hover{
+    color: #8e44d9;
+}

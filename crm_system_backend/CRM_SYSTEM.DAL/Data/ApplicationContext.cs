@@ -13,6 +13,7 @@ namespace CRM_SYSTEM.DAL.Data
         public DbSet<User> Users => Set<User>();
         public DbSet<Role> Roles => Set<Role>();
         public DbSet<Status> UserStatus => Set<Status>();
+        public DbSet<Rating> Ratings => Set<Rating>();
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
             

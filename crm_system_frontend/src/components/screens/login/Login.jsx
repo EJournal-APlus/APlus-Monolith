@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import '../../../assets/styles/global-styles.css'
 import { redirect, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from './Login.module.css'
 
 function Login(){
@@ -70,12 +71,15 @@ function Login(){
                 name='username'
                 onChange={handleChangeUsername} />
                 <input placeholder="Введите пароль" className={styles.input} style={{color: 'white'}} type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
-                <button 
-                disabled={!formValid} 
-                className={styles.btn} 
-                onClick={handleLogin}>
-                    Вход
-                </button>
+                <div className={styles.btns}>
+                    <button 
+                    disabled={!formValid} 
+                    className={styles.btn} 
+                    onClick={handleLogin}>
+                        Вход
+                    </button>
+                    <NavLink className={styles.regbtn} to='/register'>Регистрация</NavLink>
+                </div>  
             </div>
         </div>
     )

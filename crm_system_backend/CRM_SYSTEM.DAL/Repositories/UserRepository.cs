@@ -65,7 +65,7 @@ namespace CRM_SYSTEM.DAL.Repositories
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == username);
             if (user != null) return $"{user.Avatar64}";
-            else throw new ArgumentException("Пользователь не найден");
+            else throw new ArgumentException("Пользователь не найден"); 
         }
 
         public async Task<User> GetUserByName(string value)

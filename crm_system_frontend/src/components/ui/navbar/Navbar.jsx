@@ -30,39 +30,39 @@ function Navbar({avatarName}){
 
     return(
         <div className='navbar'>
-            <ul className={styles.ulnavbar}>
-                <li>
+            <div className={styles.ulnavbar}>
+                <div>
                     <a href='/profile'>
                         <div className={styles.navbaravatar} style={{backgroundImage: `url(${avatarImage})`, backgroundSize: 'cover'}}></div>
                     </a>
-                </li>
-                <li className={styles.linavbar}>
+                </div>
+                <div className={styles.linavbar}>
                     <a className={styles.navbarlink} href='/'><FaHome style={{
                         width: '30px',
                         height: '30px'
                     }}/></a>
-                </li>
-                <li className={styles.linavbar}>
+                </div>
+                <div className={styles.linavbar}>
                     <a className={styles.navbarlink} href='/users'><BsPeopleFill style={{
                         width: '30px',
                         height: '30px'
                     }}/></a>
-                </li>
-                <li className={styles.linavbar}>
+                </div>
+                <div className={styles.linavbar}>
                     <a className={styles.navbarlink} href='/userdetail'><RxDashboard style={{
                         marginTop: '2px',
                         width: '30px',
                         height: '30px'
                     }}/></a>
-                </li>
-                <li className={styles.linavbar}>
+                </div>
+                <div className={styles.linavbar}>
                     <button onClick={logout} className={styles.navbarlink} href='/userdetail'><BiSolidExit style={{
                         marginTop: '2px',
                         width: '30px',
                         height: '30px',
                     }}/></button>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     )
 }
