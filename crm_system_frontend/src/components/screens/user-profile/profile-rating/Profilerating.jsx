@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { Usersservice } from '../../../../services/users.service'
 import { Ratingservice } from '../../../../services/rating.service'
 
-function Userrating(){
+function Profilerating(){
 
     const [rating, setRating] = useState([])
     const [email, setEmail] = useState('')
@@ -47,4 +47,4 @@ function Userrating(){
         </div>    
     )
 }
-export default Userrating
+export default Profilerating

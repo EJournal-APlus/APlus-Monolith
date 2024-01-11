@@ -1,5 +1,4 @@
 ﻿using CRM_SYSTEM.BLL.Interfaces;
-using CRM_SYSTEM.BLL.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRM_SYSTEM.API.Controllers
@@ -20,5 +19,25 @@ namespace CRM_SYSTEM.API.Controllers
         {
             return Ok(_ratingService.GetUserRatingAsync(userId));
         }
+
+        [HttpGet]
+        [Route("/getgpa")]
+        public ActionResult GetGPA(int userId) =>
+            Ok(_ratingService.GetGPA(userId));
+
+        [HttpGet]
+        [Route("/getpasses")]
+        public ActionResult GetPasses(int useId) =>
+            Ok(_ratingService.GetPasses(useId));
+
+        [HttpPost]
+        [Route("/rateuser")]
+        public async Task<IActionResult> Rate(int userId, string lesson, int grade) =>
+            Ok(await _ratingService.EvaluateUser(userId, lesson, grade));
+
+        [HttpGet]
+        [Route("/lastgrade")]
+        public async Task<IActionResult> GetLastGrades(int userId) =>
+            Ok(await _ratingService.GetGradesById(userId));
     }
 }

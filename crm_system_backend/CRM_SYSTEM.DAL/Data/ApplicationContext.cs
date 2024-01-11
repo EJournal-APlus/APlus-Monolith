@@ -14,6 +14,9 @@ namespace CRM_SYSTEM.DAL.Data
         public DbSet<Role> Roles => Set<Role>();
         public DbSet<Status> UserStatus => Set<Status>();
         public DbSet<Rating> Ratings => Set<Rating>();
+        public DbSet<Passes> Passes => Set<Passes>();
+        public DbSet<Debts> Debts => Set<Debts>();
+        public DbSet<Lessons> Lessons => Set<Lessons>();
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
             

@@ -44,5 +44,9 @@ export const Usersservice = {
     async getAll(){
         const responce = await axios.get('https://localhost:7269/getall');
         return(responce.data);
+    },
+    async getUserById(id){
+        const responce = await axios.get(`https://localhost:7269/getinfobyid?userId=${id}`);
+        return responce.data;
     }
 }

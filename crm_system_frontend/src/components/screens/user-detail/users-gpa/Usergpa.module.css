@@ -1,0 +1,18 @@
+@import url('../../../../assets/styles/global-styles.css');
+
+.gpacard{
+    background: #1E1E1E;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 45px;
+}
+
+.gpa{
+    font-family: 'Roboto Flex', sans-serif;
+    color: white;
+}

@@ -3,6 +3,7 @@ using CRM_SYSTEM.DAL.Helpers;
 using CRM_SYSTEM.DAL.Interfaces;
 using CRM_SYSTEM.DAL.Models;
 using CRM_SYSTEM.DAL.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -66,6 +67,13 @@ namespace CRM_SYSTEM.DAL.Repositories
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == username);
             if (user != null) return $"{user.Avatar64}";
             else throw new ArgumentException("Пользователь не найден"); 
+        }
+
+        public async Task<User> GetUserById(int userId)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user != null) return user;
+            else throw new ArgumentException("Пользователь не найден");
         }
 
         public async Task<User> GetUserByName(string value)

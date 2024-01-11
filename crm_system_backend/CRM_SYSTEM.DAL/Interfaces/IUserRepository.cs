@@ -11,6 +11,7 @@ namespace CRM_SYSTEM.DAL.Interfaces
     public interface IUserRepository
     {
         public Task<List<User>> GetAllUserAsync();
+        public Task<User> GetUserById(int userId);
         public Task<User> GetUserByName(string value);
         public Task<User> CreateUser(User user);
         public Task<User> UploadAvatar(AvatarViewModel avatarViewModel);

@@ -8,4 +8,5 @@ font-family: 'Roboto Serif', serif;*/
 
 body{
     background: #111111;
+    user-select: none;
 }

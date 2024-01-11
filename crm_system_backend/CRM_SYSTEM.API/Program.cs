@@ -18,6 +18,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRatingRepostitory, RatingRepository>();
 builder.Services.AddScoped<IRatingService, RatingService>();
+builder.Services.AddScoped<IDebtsRepository, DebtsRepository>();
+builder.Services.AddScoped<IDebtsService, DebtsService>();
 builder.Services.AddScoped<ValidateHelper>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -33,6 +33,11 @@ namespace CRM_SYSTEM.BLL.Services
             return _userRepository.GetUserAvatar(username);
         }
 
+        public async Task<User> GetUserById(int userId)
+        {
+            return await _userRepository.GetUserById(userId);
+        }
+
         public Task<User> GetUserByName(string value)
         {
             return _userRepository.GetUserByName(value);

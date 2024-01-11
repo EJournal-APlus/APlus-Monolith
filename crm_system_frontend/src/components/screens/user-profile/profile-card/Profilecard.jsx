@@ -1,11 +1,11 @@
-import Userinfo from "../user-info/Userinfo"
+import Profileinfo from '../profile-info/Profileinfo';
 import styles from '../Userprofile.module.css'
 import { Usersservice } from "../../../../services/users.service";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 
-function Usercard(){
+function Profilecard(){
 
     const [email, setEmail] = useState('')
     const [image, setImage] = useState(null);
@@ -53,7 +53,7 @@ function Usercard(){
         {avatarImage != null ? <div className={styles.avatar} style={{backgroundImage: `url(${avatarImage})`}}></div> : 
             <div className={styles.avatar} style={{backgroundImage: `url(https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png)`}}></div>}
         <div style={{display: 'block'}}>
-            <Userinfo/>
+            <Profileinfo/>
           <div className={styles.form}>
               <input className={styles.upload} type="file" onChange={handleFileChange} /><br />
               <button className={styles.btn} onClick={handleUpload}>Загрузить аватар</button>
@@ -63,4 +63,4 @@ function Usercard(){
     )
 }
 
-export default Usercard
+export default Profilecard

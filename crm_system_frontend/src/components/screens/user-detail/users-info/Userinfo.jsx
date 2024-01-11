@@ -1,20 +1,17 @@
-import axios from 'axios'
 import styles from '../Userprofile.module.css'
 import { useState } from 'react';
 import { Usersservice } from '../../../../services/users.service';
 import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 function Userinfo(){
 
-    const [email, setEmail] = useState('')
     const [info, setInfo] = useState('')
+    const {id} = useParams()
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = localStorage.getItem('token');
-            const data = await Usersservice.getToken(token);
-            setEmail(data)
-            const userData = await Usersservice.getUserInfo(data);
+            const userData = await Usersservice.getUserById(id);
             setInfo(userData);
         };
         fetchData()

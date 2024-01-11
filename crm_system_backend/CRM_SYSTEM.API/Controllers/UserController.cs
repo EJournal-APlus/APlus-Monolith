@@ -82,6 +82,11 @@ namespace CRM_SYSTEM.API.Controllers
             return Ok(await _userService.GetUserInfo(username));
         }
 
+        [HttpGet]
+        [Route("/getinfobyid")]
+        public async Task<IActionResult> GetInfoById(int userId) =>
+            Ok(await _userService.GetUserById(userId));
+
         [HttpPost("upload")]
         public ActionResult UploadImage()
         {
