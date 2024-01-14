@@ -2,7 +2,8 @@
 
 .gradecard{
     width: 500px;
-    max-height: 200px;
+    min-height: 337.5px;
+    max-height: 337.5px;
     background-color: #1E1E1E;
     padding: 10px 20px;
     border-radius: 15px;

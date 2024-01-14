@@ -68,7 +68,7 @@ namespace CRM_SYSTEM.DAL.Repositories
 
         public int GetPasses(int userId)
         {
-            var passes = _context.Debts.Where(r => r.UserId == userId).Count();
+            var passes = _context.Passes.Where(r => r.UserId == userId).Count();
             return passes;
         }
 

@@ -4,20 +4,7 @@ import { useEffect } from 'react'
 import { Ratingservice } from '../../../../services/rating.service'
 import { useParams } from 'react-router-dom'
 
-function Userrating(){
-
-    const [rating, setRating] = useState([])
-
-    const {id} = useParams()
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const ratingData = await Ratingservice.getRatingById(id);
-            setRating(ratingData);
-        };
-        fetchData()
-    }, []);
-
+function Userrating({rating}){
 
     return(
         <div className={styles.ratingcard}>

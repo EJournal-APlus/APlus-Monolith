@@ -6,7 +6,6 @@ import styles from './Usercard.module.css'
 function Usercard({user}){
     return(
         <div key={user.id} className={styles.usercard}>
-            <div className={styles.useravatar}/>
             <h1 className={styles.username}><span><FaUser/></span>{user.name} {user.lastname}</h1>
             <h1 className={styles.username}><span><MdAlternateEmail /></span>{user.email}</h1>
             <NavLink to={`/user/${user.id}`} className={styles.btn}>Подробнее</NavLink>

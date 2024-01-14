@@ -10,12 +10,18 @@ import Profilepass from './profile-pass/Profilepass';
 import Profileachievements from './profile-achievements/Profileachievements';
 import Profiledebts from './profile-debts/Profiledebts';
 import Profilegrades from './profile-grades/Profilegrades';
+import { Ratingservice } from '../../../services/rating.service';
+import { DebtsService } from '../../../services/debts.service';
 
 function Profile(){
 
     const [email, setEmail] = useState('')
-    const [passes, setPasses] = useState(0)
     const [info, setInfo] = useState('')
+    const [grades, setGrades] = useState([])
+    const [debts, setDebts] = useState([])
+    const [pass, setPasses] = useState(0)
+    const [gpa, setGpa] = useState(0)
+    const [rating, setRating] = useState([])
     const navigate = useNavigate()
 
     const goToLogin = () =>{
@@ -27,6 +33,18 @@ function Profile(){
           const token = localStorage.getItem('token');
           const data = await Usersservice.getToken(token);
           setEmail(data)
+          const userData = await Usersservice.getUserInfo(data);
+          setInfo(userData);
+          const gradesData = await Ratingservice.getRageById(userData.id);
+          setGrades(gradesData);
+          const debtsData = await DebtsService.getDebtsById(userData.id);
+          setDebts(debtsData);
+          const passedData = await Ratingservice.getPassById(userData.id);
+          setPasses(passedData);
+          const gpaData = await Ratingservice.getGpaById(userData.id);
+          setGpa(gpaData);
+          const ratingData = await Ratingservice.getRatingById(userData.id);
+          setRating(ratingData);
       };
       fetchData()
   }, []);
@@ -35,18 +53,18 @@ function Profile(){
         <div className='mainplace'>
             {email == null && goToLogin()}
             <div className={styles.profileplace}>
-              <Profilecard/>
+              <Profilecard info={info}/>
                 <div className={styles.profileplacetwo}>
-                    <Profilerating/>
+                    <Profilerating raing={rating}/>
                     <div className={styles.profileplacetwoblock}>
-                        <Profilegpa/>
-                        <Profilepass/>
+                        <Profilegpa gpa={gpa}/>
+                        <Profilepass pass={pass}/>
                     </div>
                     <Profileachievements/>
                 </div>
                 <div className={styles.details}>
-                    <Profiledebts/>
-                    <Profilegrades/>
+                    <Profiledebts debts={debts}/>
+                    <Profilegrades grades={grades}/>
                 </div>
             </div>
         </div>

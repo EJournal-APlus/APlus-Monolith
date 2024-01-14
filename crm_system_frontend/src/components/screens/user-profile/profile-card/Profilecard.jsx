@@ -5,9 +5,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 
-function Profilecard(){
+function Profilecard({info}){
 
-    const [email, setEmail] = useState('')
     const [image, setImage] = useState(null);
     const [avatarImage, setAvatarImage] = useState(null);
     const [selectedFile, setSelectedFile] = useState(null);
@@ -16,7 +15,6 @@ function Profilecard(){
         const fetchData = async () => {
             const token = localStorage.getItem('token');
             const data = await Usersservice.getToken(token);
-            setEmail(data)
             const dataAvatar = await Usersservice.getAvatar(data);
             setAvatarImage(dataAvatar);
         };
@@ -53,7 +51,7 @@ function Profilecard(){
         {avatarImage != null ? <div className={styles.avatar} style={{backgroundImage: `url(${avatarImage})`}}></div> : 
             <div className={styles.avatar} style={{backgroundImage: `url(https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png)`}}></div>}
         <div style={{display: 'block'}}>
-            <Profileinfo/>
+            <Profileinfo info={info}/>
           <div className={styles.form}>
               <input className={styles.upload} type="file" onChange={handleFileChange} /><br />
               <button className={styles.btn} onClick={handleUpload}>Загрузить аватар</button>

@@ -4,22 +4,7 @@ import { useState } from 'react';
 import { Usersservice } from '../../../../services/users.service';
 import { useEffect } from 'react';
 
-function Profileinfo(){
-
-    const [email, setEmail] = useState('')
-    const [info, setInfo] = useState('')
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const token = localStorage.getItem('token');
-            const data = await Usersservice.getToken(token);
-            setEmail(data)
-            const userData = await Usersservice.getUserInfo(data);
-            setInfo(userData);
-        };
-        fetchData()
-    }, []);
-
+function Profileinfo({info}){
     return(
         <div className={styles.userinfo}>
             <h1 className={styles.nameuser}>{info.name} {info.lastname}</h1>
