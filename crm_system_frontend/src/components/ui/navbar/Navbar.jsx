@@ -6,6 +6,7 @@ import { BiSolidExit } from "react-icons/bi";
 import { useEffect, useState } from 'react';
 import { Usersservice } from '../../../services/users.service';
 import { BsPeopleFill } from "react-icons/bs";
+import { IoSettingsSharp } from "react-icons/io5";
 
 function Navbar({avatarName}){
     
@@ -17,6 +18,7 @@ function Navbar({avatarName}){
             const token = localStorage.getItem('token');
             const data = await Usersservice.getToken(token);
             setEmail(data)
+            console.log(data)
             const dataAvatar = await Usersservice.getAvatar(data);
             setAvatarImage(dataAvatar);
         }
@@ -55,13 +57,15 @@ function Navbar({avatarName}){
                         height: '30px'
                     }}/></a>
                 </div>
-                <div className={styles.linavbar}>
-                    <button onClick={logout} className={styles.navbarlink} href='/userdetail'><BiSolidExit style={{
-                        marginTop: '2px',
-                        width: '30px',
-                        height: '30px',
-                    }}/></button>
-                </div>
+                {email != null && 
+                    <div className={styles.linavbar}>
+                        <button onClick={logout} className={styles.navbarlink} href='/userdetail'><BiSolidExit style={{
+                            marginTop: '2px',
+                            width: '30px',
+                            height: '30px',
+                        }}/></button>
+                    </div>
+                }
             </div>
         </div>
     )

@@ -23,8 +23,10 @@ export const Usersservice = {
         }
     },
     async getUserInfo(email){
-        const responce = await axios.get(`https://localhost:7269/getinfo?username=${email}`);
-        return responce.data;
+        if(email != null){
+            const responce = await axios.get(`https://localhost:7269/getinfo?username=${email}`);
+            return responce.data;
+        }
     },
     async register(name, lastname, surname, phone, email, password){ 
         try{
@@ -48,5 +50,15 @@ export const Usersservice = {
     async getUserById(id){
         const responce = await axios.get(`https://localhost:7269/getinfobyid?userId=${id}`);
         return responce.data;
+    },
+    async UpdateUserInfo(id, name, lastname, surname, email){
+        const responce = await axios.put('https://localhost:7269/updateinfo', {
+            id,
+            name,
+            lastname,
+            surname,
+            email,
+        });
+        return responce;
     }
 }

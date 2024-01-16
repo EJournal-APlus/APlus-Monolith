@@ -44,7 +44,7 @@ namespace CRM_SYSTEM.DAL.Repositories
                     Email = user.Email,
                     MobilePhone = user.MobilePhone,
                     Password = HashPasswordHelper.HashPassword(user.Password),
-                    RoleId = 1,
+                    RoleId = 2,
                     StatusId = 1,
                 };
                 _context.Users.Add(userModel);
@@ -100,6 +100,21 @@ namespace CRM_SYSTEM.DAL.Repositories
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == username);
             if (user != null) return user;
             else throw new ArgumentException("Пользователь не найден");
+        }
+
+        public async Task<User> UpdateUserInfoAsymc(UpdateViewModel updateViewModel)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == updateViewModel.UserId);
+            if (user != null)
+            {
+                user.Name = updateViewModel.Name;
+                user.Lastname = updateViewModel.Lastname;
+                user.Surname = updateViewModel.Surname;
+                if(updateViewModel.Email != null) user.Email = updateViewModel.Email;
+                await _context.SaveChangesAsync();
+                return user;
+            }
+            else throw new ArgumentException("Error");
         }
 
         public async Task<User> UploadAvatar(AvatarViewModel avatarViewModel)

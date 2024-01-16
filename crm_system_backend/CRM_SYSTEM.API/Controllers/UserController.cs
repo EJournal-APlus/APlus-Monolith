@@ -116,5 +116,10 @@ namespace CRM_SYSTEM.API.Controllers
                 return NotFound();
             }
         }
+
+        [HttpPut]
+        [Route("/updateinfo")]
+        public async Task<IActionResult> UpdateUser([FromBody]UpdateViewModel updateViewModel) =>
+            Ok(await _userService.UpdateUserInfoAsymc(updateViewModel));
     }
 }

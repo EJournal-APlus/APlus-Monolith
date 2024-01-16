@@ -5,8 +5,10 @@ import Login from './screens/login/Login'
 import Userprofile from './screens/user-detail/Userprofile'
 import Register from './screens/registration/Register'
 import Users from './screens/all-users/Users'
+import Settings from './screens/settings/Settings'
 
 function Router(){
+
     return <BrowserRouter>
     <Routes>
         <Route element={<App/>} path='/'></Route>
@@ -15,6 +17,7 @@ function Router(){
         <Route element={<Userprofile/>} path='user/:id'></Route>
         <Route element={<Register/>} path='/register'></Route>
         <Route element={<Users/>} path='/users'></Route>
+        <Route element={<Settings/>} path='/settings'></Route>
         <Route path='*' element={<div style={{
             display: 'flex',
             justifyContent: 'center',
