@@ -45,6 +45,7 @@ export const Usersservice = {
     },
     async getAll(){
         const responce = await axios.get('https://localhost:7269/getall');
+        console.log(responce.data)
         return(responce.data);
     },
     async getUserById(id){
@@ -60,5 +61,9 @@ export const Usersservice = {
             email,
         });
         return responce;
+    },
+    async getWaitingUser(){
+        const responce = await axios.get('https://localhost:7269/waitingusers');
+        return responce.data;
     }
 }

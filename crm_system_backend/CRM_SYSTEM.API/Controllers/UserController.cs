@@ -119,7 +119,17 @@ namespace CRM_SYSTEM.API.Controllers
 
         [HttpPut]
         [Route("/updateinfo")]
-        public async Task<IActionResult> UpdateUser([FromBody]UpdateViewModel updateViewModel) =>
+        public async Task<IActionResult> UpdateUserInfo([FromBody]UpdateViewModel updateViewModel) =>
             Ok(await _userService.UpdateUserInfoAsymc(updateViewModel));
+
+        [HttpPut]
+        [Route("/updateuserstatus")]
+        public async Task<IActionResult> UpdateUserStatus(int userid) =>
+            Ok(await _userService.UpdateUserStatus(userid));
+
+        [HttpGet]
+        [Route("/waitingusers")]
+        public async Task<IActionResult> GetWaitingUsers() =>
+            Ok(await _userService.GetWaitingUsers());
     }
 }

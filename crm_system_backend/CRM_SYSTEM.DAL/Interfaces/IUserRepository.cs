@@ -16,6 +16,8 @@ namespace CRM_SYSTEM.DAL.Interfaces
         public Task<User> CreateUser(User user);
         public Task<User> UploadAvatar(AvatarViewModel avatarViewModel);
         public Task<User> UpdateUserInfoAsymc(UpdateViewModel updateViewModel);
+        public Task<User> UpdateUserStatus(int userid);
+        public Task<List<User>> GetWaitingUsers();
         public string AuthUser(string token);
         public int GetUserCount();
         public Task<User> GetUserInfo(string username);

@@ -18,7 +18,6 @@ function Navbar({avatarName}){
             const token = localStorage.getItem('token');
             const data = await Usersservice.getToken(token);
             setEmail(data)
-            console.log(data)
             const dataAvatar = await Usersservice.getAvatar(data);
             setAvatarImage(dataAvatar);
         }

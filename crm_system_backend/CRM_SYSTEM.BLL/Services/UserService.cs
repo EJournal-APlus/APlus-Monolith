@@ -53,9 +53,19 @@ namespace CRM_SYSTEM.BLL.Services
             return _userRepository.GetUserInfo(username);
         }
 
+        public async Task<List<User>> GetWaitingUsers()
+        {
+            return await _userRepository.GetWaitingUsers();
+        }
+
         public async Task<User> UpdateUserInfoAsymc(UpdateViewModel updateViewModel)
         {
             return await _userRepository.UpdateUserInfoAsymc(updateViewModel);
+        }
+
+        public async Task<User> UpdateUserStatus(int userid)
+        {
+            return await _userRepository.UpdateUserStatus(userid);
         }
 
         public Task<User> UploadAvatar(AvatarViewModel avatarViewModel)

@@ -23,7 +23,6 @@ namespace CRM_SYSTEM.DAL.Repositories
             return await _context.Debts.ToListAsync();
         }
 
-
         public async Task<List<DebtsViewModel>> GetDebtsByIdAsync(int userId)
         {
             var userDebts = await _context.Debts

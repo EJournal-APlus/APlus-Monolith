@@ -102,6 +102,12 @@ namespace CRM_SYSTEM.DAL.Repositories
             else throw new ArgumentException("Пользователь не найден");
         }
 
+        public async Task<List<User>> GetWaitingUsers()
+        {
+            var users = await _context.Users.Where(u => u.StatusId == 1).ToListAsync();
+            return users;
+        }
+
         public async Task<User> UpdateUserInfoAsymc(UpdateViewModel updateViewModel)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == updateViewModel.UserId);
@@ -115,6 +121,14 @@ namespace CRM_SYSTEM.DAL.Repositories
                 return user;
             }
             else throw new ArgumentException("Error");
+        }
+
+        public async Task<User> UpdateUserStatus(int userid)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userid);
+            user!.StatusId = 2;
+            await _context.SaveChangesAsync();
+            return user;
         }
 
         public async Task<User> UploadAvatar(AvatarViewModel avatarViewModel)

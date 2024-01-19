@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import '../../../assets/styles/global-styles.css'
 import { Usersservice } from '../../../services/users.service'
 import styles from './Users.module.css'
@@ -16,10 +16,13 @@ function Users(){
         fetchData()
     }, [])
 
+    const acceptedUser = 
+        users.filter( user => user.statusId == 2);
+
     return(
         <div className='mainplace'>
             <div className={styles.cardplace}>
-                {users.length ? users.map(user => (
+                {acceptedUser.length ? acceptedUser.map(user => (
                     <Usercard key={user.id} user={user}/>
                     )) :
                     <p style={{

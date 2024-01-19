@@ -22,7 +22,10 @@ function Profilecard({info}){
             <div className={styles.avatar} style={{backgroundImage: `url(https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png)`}}></div>}
         <div style={{display: 'block'}}>
             <Profileinfo info={info}/>
-            <NavLink style={{textDecoration: 'none'}} className={styles.btn} to={'/settings'}>Изменить профиль</NavLink>
+            <div className={styles.btnplace}>
+                <NavLink style={{textDecoration: 'none'}} className={styles.btn} to={'/settings'}>Изменить профиль</NavLink>
+                {info.roleId != 2 && <NavLink style={{textDecoration: 'none'}} className={styles.btn} to={'/adminpanel'}>Админ панель</NavLink>}
+            </div>
         </div>
     </div>
     )

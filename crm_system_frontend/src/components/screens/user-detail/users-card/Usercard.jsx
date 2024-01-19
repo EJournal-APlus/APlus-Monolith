@@ -6,19 +6,13 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 
-function Usercard(){
-
-    const [email, setEmail] = useState('')
-    const [image, setImage] = useState(null);
+function Usercard({info}){
     const [avatarImage, setAvatarImage] = useState(null);
     const [selectedFile, setSelectedFile] = useState(null);
     const {id} = useParams()
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = localStorage.getItem('token');
-            const data = await Usersservice.getToken(token);
-            setEmail(data)
             const userData = await Usersservice.getUserById(id);
             const dataAvatar = await Usersservice.getAvatar(userData.email);
             setAvatarImage(dataAvatar);
@@ -32,7 +26,7 @@ function Usercard(){
         {avatarImage != null ? <div className={styles.avatar} style={{backgroundImage: `url(${avatarImage})`}}></div> : 
             <div className={styles.avatar} style={{backgroundImage: `url(https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png)`}}></div>}
         <div style={{display: 'block'}}>
-            <Userinfo/>
+            <Userinfo info={info}/>
         </div>
     </div>
     )

@@ -1,28 +1,6 @@
 import styles from './Userrating.module.css'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import { Usersservice } from '../../../../services/users.service'
-import { Ratingservice } from '../../../../services/rating.service'
 
-function Profilerating(){
-
-    const [rating, setRating] = useState([])
-    const [email, setEmail] = useState('')
-    const [info, setInfo] = useState('')
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const token = localStorage.getItem('token');
-            const data = await Usersservice.getToken(token);
-            setEmail(data)
-            const userData = await Usersservice.getUserInfo(data);
-            setInfo(userData);
-            const ratingData = await Ratingservice.getRatingById(userData.id);
-            setRating(ratingData);
-        };
-        fetchData()
-    }, []);
-
+function Profilerating({raing}){
 
     return(
         <div className={styles.ratingcard}>

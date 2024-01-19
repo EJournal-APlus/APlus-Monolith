@@ -6,6 +6,7 @@ import Userprofile from './screens/user-detail/Userprofile'
 import Register from './screens/registration/Register'
 import Users from './screens/all-users/Users'
 import Settings from './screens/settings/Settings'
+import Adminpanel from './screens/admin-panel/Adminpanel'
 
 function Router(){
 
@@ -18,6 +19,7 @@ function Router(){
         <Route element={<Register/>} path='/register'></Route>
         <Route element={<Users/>} path='/users'></Route>
         <Route element={<Settings/>} path='/settings'></Route>
+        <Route element={<Adminpanel/>} path='/adminpanel'></Route>
         <Route path='*' element={<div style={{
             display: 'flex',
             justifyContent: 'center',
