@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kR8ivsdoBClBQK+n84pYVBFx3H+5BquqMiE9wpGPxkw=",
+  "Source": "APlus.WebApi",
+  "BasePath": "_content/APlus.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.btn{
+    color: white;
+    padding: 10px 15px;
+    background-color: #464646;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\bin\Debug\net8.0\APlus.Domain.deps.json
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\bin\Debug\net8.0\APlus.Domain.runtimeconfig.json
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\bin\Debug\net8.0\APlus.Domain.dll
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\bin\Debug\net8.0\APlus.Domain.pdb
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.csproj.AssemblyReference.cache
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.AssemblyInfoInputs.cache
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.AssemblyInfo.cs
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.csproj.CoreCompileInputs.cache
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.sourcelink.json
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.dll
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\refint\APlus.Domain.dll
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.pdb
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\APlus.Domain.genruntimeconfig.cache
+D:\crm_system\APlus-monolith\APlus_backend\APlus.Domain\obj\Debug\net8.0\ref\APlus.Domain.dll

@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "APlus.WebApi.Controllers.SettingController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/settings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "APlus.Domain.Models.User.UserModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APlus.WebApi.Controllers.SettingController",
+    "Method": "Admins",
+    "RelativePath": "api/settings/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APlus.WebApi.Controllers.SettingController",
+    "Method": "Test",
+    "RelativePath": "api/settings/public",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APlus.WebApi.Controllers.AuthenticationController",
+    "Method": "SignIn",
+    "RelativePath": "api/users/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "signInModel",
+        "Type": "APlus.Domain.Models.Sign.SignInModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APlus.WebApi.Controllers.AuthenticationController",
+    "Method": "SignUp",
+    "RelativePath": "api/users/signup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "signUpModel",
+        "Type": "APlus.Domain.Models.Sign.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

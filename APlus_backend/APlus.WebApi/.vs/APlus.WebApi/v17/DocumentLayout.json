@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.webapi\\aplus.webapi\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|solutionrelative:aplus.webapi\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.webapi\\aplus.webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|solutionrelative:aplus.webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F65D93-5400-44A0-8E39-433B46B011C4}|..\\APlus.Application\\APlus.Application.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.application\\services\\user\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F65D93-5400-44A0-8E39-433B46B011C4}|..\\APlus.Application\\APlus.Application.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.application\\services\\user\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\models\\user\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.webapi\\aplus.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|solutionrelative:aplus.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\interfaces\\user\\isettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\interfaces\\user\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\aplus.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\entities\\usermaininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\entities\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\entities\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\entities\\entityconfigurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314133132_APlus2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\models\\responce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.webapi\\aplus.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|solutionrelative:aplus.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\constants\\accessroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114412_Aplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114229_Aplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114101_APlus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\models\\sign\\signupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9704E17-7DC5-405F-AA36-B7F76613D8DB}|..\\APlus.Domain\\APlus.Domain.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.domain\\models\\sign\\signinmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|d:\\crm_system\\aplus-monolith\\aplus_backend\\aplus.webapi\\aplus.webapi\\aplus.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DB8FAB09-F5D4-4CAA-A0AB-8155E671986C}|APlus.WebApi\\APlus.WebApi.csproj|solutionrelative:aplus.webapi\\aplus.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingController.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\Controllers\\SettingController.cs",
+              "RelativeDocumentMoniker": "APlus.WebApi\\Controllers\\SettingController.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\Controllers\\SettingController.cs",
+              "RelativeToolTip": "APlus.WebApi\\Controllers\\SettingController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowB0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T15:44:25.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SettingsService.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Application\\Services\\User\\SettingsService.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Application\\Services\\User\\SettingsService.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Application\\Services\\User\\SettingsService.cs",
+              "RelativeToolTip": "..\\APlus.Application\\Services\\User\\SettingsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T15:41:41.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "APlus.Domain",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\APlus.Domain.csproj",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\APlus.Domain.csproj",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\APlus.Domain.csproj",
+              "RelativeToolTip": "..\\APlus.Domain\\APlus.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-14T14:45:11.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserMainInfo.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\UserMainInfo.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Entities\\UserMainInfo.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\UserMainInfo.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Entities\\UserMainInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T14:37:37.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\User\\UserModel.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Models\\User\\UserModel.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\User\\UserModel.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Models\\User\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T14:36:34.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "APlus.WebApi\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "APlus.WebApi\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T13:15:04.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Application\\Services\\User\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Application\\Services\\User\\AuthenticationService.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Application\\Services\\User\\AuthenticationService.cs",
+              "RelativeToolTip": "..\\APlus.Application\\Services\\User\\AuthenticationService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:46:23.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserCredentials.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\UserCredentials.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Entities\\UserCredentials.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\UserCredentials.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Entities\\UserCredentials.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:24:44.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:47:39.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "APlus.WebApi\\Program.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\Program.cs",
+              "RelativeToolTip": "APlus.WebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:27:28.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\EntityConfigurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Entities\\EntityConfigurations\\UserConfiguration.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\EntityConfigurations\\UserConfiguration.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Entities\\EntityConfigurations\\UserConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T13:33:25.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISettingService.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Interfaces\\User\\ISettingService.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Interfaces\\User\\ISettingService.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Interfaces\\User\\ISettingService.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Interfaces\\User\\ISettingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:22:36.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoleConfiguration.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\EntityConfigurations\\RoleConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Entities\\EntityConfigurations\\RoleConfiguration.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\EntityConfigurations\\RoleConfiguration.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Entities\\EntityConfigurations\\RoleConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:32:01.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Interfaces\\User\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Interfaces\\User\\IAuthenticationService.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Interfaces\\User\\IAuthenticationService.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Interfaces\\User\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:20:47.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240314133132_APlus2.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314133132_APlus2.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Migrations\\20240314133132_APlus2.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314133132_APlus2.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Migrations\\20240314133132_APlus2.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T13:31:33.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "APlus.WebApi\\appsettings.json",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\appsettings.json",
+              "RelativeToolTip": "APlus.WebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-12T14:44:14.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccessRoles.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Constants\\AccessRoles.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Constants\\AccessRoles.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Constants\\AccessRoles.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Constants\\AccessRoles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:32:59.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240314114412_Aplus.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114412_Aplus.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Migrations\\20240314114412_Aplus.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114412_Aplus.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Migrations\\20240314114412_Aplus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:44:12.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240314114229_Aplus.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114229_Aplus.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Migrations\\20240314114229_Aplus.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114229_Aplus.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Migrations\\20240314114229_Aplus.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:42:30.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Entities\\Role.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\Role.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Entities\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:26:43.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Responce.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\Responce.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Models\\Responce.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\Responce.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Models\\Responce.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:41:50.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20240314114101_APlus.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114101_APlus.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Migrations\\20240314114101_APlus.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Migrations\\20240314114101_APlus.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Migrations\\20240314114101_APlus.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:41:02.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Entities\\BaseEntity.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Entities\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:25:23.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SignUpModel.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\Sign\\SignUpModel.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Models\\Sign\\SignUpModel.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\Sign\\SignUpModel.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Models\\Sign\\SignUpModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:39:30.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "APlus.WebApi.csproj",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\APlus.WebApi.csproj",
+              "RelativeDocumentMoniker": "APlus.WebApi\\APlus.WebApi.csproj",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.WebApi\\APlus.WebApi\\APlus.WebApi.csproj",
+              "RelativeToolTip": "APlus.WebApi\\APlus.WebApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-12T14:44:13.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SignInModel.cs",
+              "DocumentMoniker": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\Sign\\SignInModel.cs",
+              "RelativeDocumentMoniker": "..\\APlus.Domain\\Models\\Sign\\SignInModel.cs",
+              "ToolTip": "D:\\crm_system\\APlus-monolith\\APlus_backend\\APlus.Domain\\Models\\Sign\\SignInModel.cs",
+              "RelativeToolTip": "..\\APlus.Domain\\Models\\Sign\\SignInModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:36:17.428Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

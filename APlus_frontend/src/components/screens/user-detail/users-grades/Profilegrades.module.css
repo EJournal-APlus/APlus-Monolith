@@ -1,0 +1,44 @@
+@import url('../../../../assets/styles/global-styles.css');
+
+.gradecard{
+    width: 500px;
+    min-height: 337.5px;
+    max-height: 337.5px;
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+    border-radius: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.gradecard::-webkit-scrollbar
+{
+    background-color: #131313;
+    border-radius: 8px;
+    width: 7px;
+    overflow: hidden;
+}
+.gradecard::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.gradeitem{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.gradeitem h1{
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+}
